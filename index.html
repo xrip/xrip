@@ -1,0 +1,296 @@
+<html lang="ru_RU">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"/>
+    <title>xrip // ilya maslennikov</title>
+    <meta name="Description" content=""/>
+    <meta name="Keywords" content="xrip.ru, xrip, xrip_ru, ilya maslennikov, ilia maslennikov, илья масленников, хрип"/>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        // no jquery here
+        function $(id) {
+            return typeof id == "string" ? document.getElementById(id) : id;
+        }
+
+        // spamers, look at this :)
+        window.onload = function () {
+            // crawlers must die! hide my phone from crawlers =)
+            (function (phone) {
+                phone.innerHTML = phone.innerHTML.replace(/\?/g, "9")
+            })($("phone"));
+
+            var context = $("canvas").getContext("2d");
+
+            if (!context) return;
+
+            // number 7 magic!
+            var email = "xrip" + String.fromCharCode(Math.round(7 + (77 ^ 7) - 7 - Math.sqrt(7) - 7)) + "xrip.ru";
+
+            $("canvas").onclick = function () {
+                document.location.href = "mailto:" + email;
+            };
+
+            context.font = "normal 16px Courier New";
+            context.fillText(email, 0, 12);
+        }
+    </script>
+    <style>
+        #home {
+            max-width: 640px;
+            margin: 0 auto;
+            font-family: "Courier New", "Droid Sans";
+            font-size: 18px;
+        }
+
+        article {
+            border-bottom: 1px dashed gray;
+        }
+
+        footer {
+            text-align: right;
+        }
+
+        #canvas:hover {
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+        ul {
+            padding: 0 20px;
+        }
+        li {
+            padding-left: 9px;
+            border-left: 9px solid #eee;
+            -webkit-border-top-left-radius: 12px;
+            -webkit-border-bottom-left-radius: 12px;
+            -moz-border-radius-topleft: 12px;
+            -moz-border-radius-bottomleft: 12px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+
+            border-right: 9px solid #eee;
+            -webkit-border-top-right-radius: 12px;
+            -webkit-border-bottom-right-radius: 12px;
+            -moz-border-radius-topright: 12px;
+            -moz-border-radius-bottomright: 12px;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        li label {
+            font-weight: bold;
+        }
+        li:hover {
+            background-color: lightgrey;
+            border-color: #aaa;
+        }
+
+        h1 i {
+            color: navy;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+        }
+
+
+        li {
+            list-style: none;
+            clear: both;
+            line-height: 25px;
+        }
+
+        li label {
+            float: left;
+            display: block;
+            height: 20px;
+            width: 90px;
+        }
+
+        li canvas {
+            padding: 0;
+            margin: 0;
+        }
+        #output {
+            padding-bottom: 10px;
+        }
+        .button {
+            text-align:center;
+            margin:auto;
+        }
+        button {
+            font-size: 20px;
+        }
+
+
+    </style>
+    <script src="https://amp.cloudflare.com/viewer/rtv/011-4-71/amp-viewer.js" async crossorigin="anonymous"
+            data-amp-viewer data-parent="4b29f597685f55ac" data-domain="xrip.ru"
+            data-viewer-config="eyJwcmVwZW5kTGlua3NXaXRoIjoiIn0"></script>
+</head>
+<body id="home">
+<h1>Меня зовут <i>Илья Масленников</i>, чаще известен как <i>xrip</i></h1>
+<h2>Связаться со мной можно разными способами: </h2>
+<div id="contacts">
+    <ul>
+        <li><label>telegram</label><span>:</span> <a href="https://t.me/xrip_ru" title="Связаться со мной по telegram">xrip_ru</a>
+        </li>
+        <li><label>skype</label><span>:</span> <a href="skype:xrip.ru?chat"
+                                                  title="Связаться со мной по skype">xrip.ru</a></li>
+        <li><label>facebook</label><span>:</span> <a href="https://facebook.com/xrip.ru"
+                                                     title="Моя страничка на facebook">xrip.ru</a></li>
+        <li><label>mobile</label><span>:</span> <span id="phone">+7&thinsp;(?26)&thinsp;356-0?-?6</span></li>
+        <li><label>email</label><span>:</span>
+            <canvas id="canvas" width="120" height="15" title="Мой email"></canvas>
+        </li>
+        <li><label>github</label><span>:</span> <a href="https://github.com/xrip">xrip</a></li>
+    </ul>
+</div>
+<h2>Генератор сюжетов Sci-Fi романов по <a target="_blank" href="https://lifehacker.ru/instrukciya-fantasta/">Станиславу Лему</a>: </h2>
+<div id="output"></div>
+<div class="button"><button onclick="refresh()">&#x1F3B2; Новый сюжет</button></div>
+<footer>
+    <p>&copy; <a href="https://xrip.ru" title="Илья Масленников">Ilya Maslennikov</a> aka <a href="https://xrip.ru"
+                                                                                             title="хрип">xrip</a></p>
+</footer>
+<div style="display:none;">
+    <script type="text/javascript">
+        (function (w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter11327239 = new Ya.Metrika({id: 11327239, enableAll: true});
+                } catch (e) {
+                }
+            });
+        })(window, "yandex_metrika_callbacks");
+    </script>
+</div>
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+<noscript>
+    <div><img src="//mc.yandex.ru/watch/11327239" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<script type="text/javascript">
+    const data = {
+        1: [
+            {text: 'Земля', next: 2}
+        ],
+        2: [
+            {text: 'сталкивается с огромной кометой', next: [3, 20]},
+            {text: '[сгорает|замерзает|падает на Солнце] и', next: 4},
+            {text: 'подвергается нашествию', next: 5},
+            {text: 'ученые', next: 6},
+        ],
+        3: [
+            {text: 'и разрушается', next: [null, 20]},
+            {text: 'и не разрушается, но', next: 4},
+            {text: 'и остается невридимой.'},
+        ],
+        20: [
+            {text: 'но [горстка|несколько] людей успевают [спастись|скрыться|сбежать] ', next: 21},
+            {text: 'выживают только животные.'},
+        ],
+        21: [
+            {text: 'на космическом корабле', next: 22},
+            {text: 'в недрах земли', next: [null,23]},
+            {text: 'с помощью портала в другое измерение ', next: [null, 23]},
+        ],
+        22: [
+            {text: 'но у них [заканчивается топливо|кончается заряд батарей] и они [оказываются одни|замерзают] посреди космоса.'},
+            {text: 'который отвозит их [на марс|на юпитер|на сатурн|в другую галактику], где они ', next: [4, 5, 6]},
+        ],
+        23: [
+            {text: 'где они встречают', next: 5},
+            {text: 'где', next: 4},
+        ],
+        4: [
+            {text: 'почти все гибнут', next: [null, 20]},
+            {text: 'все гибнут.'},
+        ],
+        5: [
+            {text: '[маленьких|огромных|ужасных|страшных]', next: 7},
+        ],
+        6: [
+            {text: '[создают|открывают|обнаруживают]', next: 5},
+        ],
+        7: [
+            {text: '[марсиан|селенитов|насекомых|пресмыкающихся|роботов|внеземных существ|демонов], которые', next: 8},
+        ],
+        8: [
+            {text: 'ведут себя дружелюбно, но их никто не понимает', next: [11, 17, 19]},
+            {text: 'желают наших женшин', next: [9, 11, 12, 17, 18]},
+            {text: 'не понимают нас', next: [10,11,12, 19]},
+            {text: 'отлично понимают нас', next: [11,12]},
+            {text: 'воспринимают нас только как пищу', next: [10, 11,12]},
+            {text: 'ведут себя дружелюбно', next: [null, 10]},
+        ],
+        9: [
+            {text: 'похищают их и исчезают.'},
+        ],
+        10: [
+            {text: 'и съедают нас.'},
+        ],
+        11: [
+            {text: 'и они [совсем не|очень] похожи на нас', next: [15,12]},
+            {text: 'и они являются [радиоактивными|нерадиоактивными]', next: [15,12]},
+        ],
+        12: [
+            {text: 'и [не|] могут быть уничтожены', next: 14},
+        ],
+        14: [
+            {
+                text: '[толпой парней с факелами|сухопутной армией|морским флотом|авиацией|морской пехотой и войсками береговой охраны|атомной бомбой]',
+                next: [null, 15, 17]
+            },
+        ],
+        15: [
+            {text: 'но ученые изобретают новое оружие', next: 16},
+            {text: 'но', next: [4,18]},
+        ],
+        16: [
+            {text: 'которое отказывает', next: [17,13]},
+            {text: 'которое их убивает.'},
+            {text: 'которое превращает их в мерзки глыбы.'},
+        ],
+        13: [
+            {text: 'но', next: 18},
+        ],
+        17: [
+            {text: 'но они умирают от чёрной оспы.'},
+            {text: 'и поэтому они съедают нас.', next: [null, 20]},
+            {text: 'и поэтому они убивают нас.', next: [null, 20]},
+            {text: 'и поэтому они устанавливают систему доброжелательной диктатуры.'},
+            {text: 'и поэтому они захватывают нас в рабство.', next: [null, 20]},
+        ],
+        18: [
+            {text: 'один хитрый парень убеждает их что люди "ОК"', next: [19, 17]},
+            {text: 'священник рассказывает им о Боге', next: [19, 17]},
+            {text: 'они влюбляются в красивую девушку, они женятся и живут долго и счастливо.'},
+        ],
+        19: [
+            {text: 'и они превращаются в мерзкие глыбы.'},
+            {text: 'и они улетают.'},
+            {text: 'и они умирают.'},
+        ]
+    };
+
+    Array.prototype.randomElement = function () {
+        return this[Math.floor(Math.random() * this.length)]
+    };
+
+    (refresh = () => {
+        document.getElementById('output').innerHTML = ((level, data) => (function loop(level) {
+            const item = data[level].randomElement(),
+                text = item.text.split(/[\[\]]/).map(text => text.split('|').randomElement()).join(''),
+                nextLevel = Array.isArray(item.next) ? item.next.randomElement() : item.next || '';
+
+            return [text, nextLevel && loop(nextLevel)].join(' ');
+        })(level))(1, data);
+    })();
+
+
+</script>
+</body>
+</html>
