@@ -1,4 +1,16 @@
-# Личная страничка xrip.ru
+```JS
+class Person {
+    name       = 'Ilya Maslennikov';
+    nickname   = 'xrip';
+    title      = 'Software Engineer / Tech Lead';
+    location   = 'Moscow, Russia';
+}
 
-## Из интересного
-* Интегрирован генератор сюжетов фантастических рассказов по Станиславу Лему
+class Skills {
+    languages  = ['TypeScript', 'JavaScript', 'PHP'];
+    databases  = ['MongoDB', 'DocumentDB', '*SQL', 'Redis'];
+    frameworks = ['NestJS', 'Vue', 'AlpineJs', 'Yii']
+}
+
+const me = Object.assign(new Person, new Skills);
+```
