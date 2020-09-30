@@ -8,7 +8,7 @@ class Person {
 
 class Skills {
     languages  = ['TypeScript', 'JavaScript', 'PHP'];
-    databases  = ['MongoDB', 'DocumentDB', '*SQL', 'Redis'];
+    databases  = ['ClickHouse', 'MongoDB', 'DocumentDB', '*SQL', 'Redis'];
     frameworks = ['NestJS', 'Vue', 'AlpineJs', 'Yii']
 }
 
